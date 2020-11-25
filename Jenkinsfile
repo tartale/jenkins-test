@@ -7,12 +7,8 @@ parameters {
 }
 
 timestamps {
-  stages {
 
     stage('Say Hello') {
-        steps {
-          echo "Hello ${env.YOURNAME}.  Everything is awesome!"
-        }
+        echo "Hello ${env.YOURNAME}.  Everything is awesome!"
      }
-  }
 }
