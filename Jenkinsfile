@@ -9,7 +9,7 @@ pipeline {
    parameters {
      string(
        name: 'YOUR_NAME', 
-       defaultValue: 'world',
+       defaultValue: params.YOUR_NAME ?:'world',
        description: 'Name to greet'
      )
    }
