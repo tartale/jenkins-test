@@ -1,3 +1,4 @@
+# scripted pipeline
 node {
   properties(
     [
