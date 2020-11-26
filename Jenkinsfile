@@ -10,7 +10,7 @@ node {
   timestamps {
 
       stage('Say Hello') {
-          echo "Hello ${env.YOURNAME}.  Everything is awesome!"
+          echo "Hello ${params.YOURNAME}.  Everything is awesome!"
        }
   }
 }
