@@ -1,16 +1,25 @@
-node {
-  parameters {
-    string(
-      name: 'YOURNAME', 
-      defaultValue: 'world',
-      description: 'Name to greet'
-    )
-  }
+pipeline {
+   agent any
+   options {
+       timestamps()
+       disableConcurrentBuilds()
+       timeout(time: 2, unit: 'HOURS')
+   }
 
-  timestamps {
+   parameters {
+     string(
+       name: 'YOURNAME', 
+       defaultValue: 'world',
+       description: 'Name to greet'
+     )
+   }
 
+   stages {
       stage('Say Hello') {
-          echo "Hello ${params.YOURNAME}.  Everything is awesome!"
+         steps {
+            echo "Hello ${params.YOURNAME}.  Everything is awesome!"
+         }
        }
-  }
+     }
+   }
 }
