@@ -20,6 +20,5 @@ pipeline {
             echo "Hello ${params.YOURNAME}.  Everything is awesome!"
          }
        }
-     }
    }
 }
