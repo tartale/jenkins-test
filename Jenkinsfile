@@ -2,7 +2,7 @@ node {
   parameters {
     string(
       name: 'YOURNAME', 
-      defaultValue: 'world', 
+      defaultValue: params.YOURNAME ?:'world',
       description: 'Name to greet'
     )
   }
