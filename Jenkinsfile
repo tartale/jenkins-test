@@ -1,11 +1,4 @@
 node {
-  parameters {
-    string(
-      name: 'YOURNAME', 
-      defaultValue: params.YOURNAME ?:'world',
-      description: 'Name to greet'
-    )
-  }
   properties(
     [
         parameters(
