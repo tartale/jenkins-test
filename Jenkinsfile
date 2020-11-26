@@ -1,11 +1,17 @@
 node {
-  parameters {
-    string(
-      name: 'YOURNAME', 
-      defaultValue: 'world', 
-      description: 'Name to greet'
-    )
-  }
+  properties(
+    [
+      parameters(
+        [
+          string(
+            name: 'YOURNAME', 
+            defaultValue: 'world', 
+            description: 'Name to greet'
+          )
+        ]
+      )
+    ]
+  )
 
   timestamps {
 
