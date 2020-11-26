@@ -8,7 +8,7 @@ pipeline {
 
    parameters {
      string(
-       name: 'YOURNAME', 
+       name: 'YOUR_NAME', 
        defaultValue: 'world',
        description: 'Name to greet'
      )
@@ -17,7 +17,7 @@ pipeline {
    stages {
       stage('Say Hello') {
          steps {
-            echo "Hello ${params.YOURNAME}.  Everything is awesome!"
+            echo "Hello ${params.YOUR_NAME}.  Everything is awesome!"
          }
        }
    }
