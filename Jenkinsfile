@@ -9,7 +9,7 @@ pipeline {
    stages {
       stage('Say Wassup') {
          steps {
-            echo "Hello ${env.YOUR_NAME}.  Everything is awesome!"
+            echo "Hello ${params.YOUR_NAME}.  Everything is awesome!"
          }
        }
    }
