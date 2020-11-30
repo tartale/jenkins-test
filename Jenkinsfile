@@ -7,7 +7,7 @@ pipeline {
    }
    
    stages {
-      stage('Say Hello') {
+      stage('Say Wassup') {
          steps {
             echo "Hello ${env.YOUR_NAME}.  Everything is awesome!"
          }
