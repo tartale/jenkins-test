@@ -6,10 +6,18 @@ pipeline {
        timeout(time: 2, unit: 'HOURS')
    }
 
+   parameters {
+     string(
+       name: 'YOUR_NAME', 
+       defaultValue: params.YOUR_NAME ?:'world',
+       description: 'Name to greet'
+     )
+   }
+
    stages {
       stage('Say Hello') {
          steps {
-            echo "Hello ${env.YOUR_NAME}.  Everything is awesome!"
+            echo "Hello ${params.YOUR_NAME}.  Everything is awesome!"
          }
        }
    }
