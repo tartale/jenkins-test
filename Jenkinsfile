@@ -17,7 +17,7 @@ pipeline {
    stages {
       stage('Say Hello') {
          steps {
-            echo "Hello ${env.YOUR_NAME}.  ${params.STATEMENT}"
+            echo "Hello ${params.YOUR_NAME}.  ${params.STATEMENT}"
          }
        }
    }
