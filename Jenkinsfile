@@ -14,7 +14,7 @@ pipeline {
      )
      string(
        name: 'STATEMENT', 
-       defaultValue: 'Everything is awesome!',
+       defaultValue: 'Everything is really awesome!',
        description: 'Something to say'
      )
    }
