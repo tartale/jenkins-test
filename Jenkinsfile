@@ -14,7 +14,7 @@ pipeline {
      )
      string(
        name: 'STATEMENT', 
-       defaultValue: 'Everything is really awesome!',
+       defaultValue: 'Everything is awesome!',
        description: 'Something to say'
      )
    }
@@ -22,7 +22,7 @@ pipeline {
    stages {
       stage('Say Hello') {
          steps {
-            echo "Hello ${params.YOUR_NAME}.  ${params.STATEMENT}"
+            echo "Hello ${params.YOUR_NAME}.  ${params.STATEMENT}.  Seriously."
          }
        }
    }
