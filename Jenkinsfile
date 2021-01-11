@@ -8,6 +8,11 @@ pipeline {
 
    parameters {
      string(
+       name: 'YOUR_NAME', 
+       defaultValue: 'world',
+       description: 'Someone'
+     )
+     string(
        name: 'STATEMENT', 
        defaultValue: 'Everything is awesome!',
        description: 'Something to say'
